@@ -1,0 +1,34 @@
+{
+    "name": "timeshow/laravel-pay",
+    "description": "payment for laravel",
+    "keywords": ["alipay", "wechat", "unipay", "pay", "laravel", "laravel-pay"],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Timeshow\\LaravelPay\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "timeshow",
+            "email": "397975896@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "^8.0 || ^9.0 || ^10.0",
+        "illuminate/contracts": "^8.0 || ^9.0 || ^10.0",
+        "yansongda/pay": "~3.5.0"
+    },
+    "require-dev": {
+        "laravel/framework": "^8.0 || ^9.0 || ^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "aliases": {
+                "Pay": "Yansongda\\LaravelPay\\Facades\\Pay"
+            }
+        }
+    }
+}
